@@ -1,0 +1,108 @@
+
+:root
+{
+    --Darkcyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Verydarkblue: hsl(212, 21%, 14%);
+    --Darkgrayishblue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+}
+main
+{
+    background-color: var(--Cream);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+section
+{
+    width: 650px;
+    border-radius: 15px;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: row;
+}
+.left-image
+{
+    
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.Prodect-description
+{
+    padding: 40px;
+
+}
+.Prodect-description .category
+{
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--Darkgrayishblue);
+    letter-spacing: 3px;
+  
+}
+h1{
+    font-size: 36px;
+    font-weight: 500px;
+
+}
+p{
+    font-size: 14px;
+color: var(--Darkgrayishblue);
+line-height: 1.5rem;
+
+}
+.prices
+{
+    display: flex;
+    align-items: center;
+    margin: 35px 0px;
+}
+.list-price
+{
+    text-decoration: line-through;
+    color: var(--Darkgrayishblue);
+
+}
+.sale-price
+{
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--Darkcyan);
+    margin-right: 20px;
+}
+button
+{
+    width: 100%;
+    background-color: var(--Darkcyan);
+    color: var(--White);
+   vertical-align: middle;
+   font-size: 18px;
+    font-weight: 700;
+    padding: 20px;
+    border-style: none;
+    border-radius: 10px;
+}
+button>img{
+    margin-right: 15px;
+    vertical-align: middle;
+    width: 8%;
+}
+@media only screen and (max-width: 600px)
+{
+   section
+    {
+      
+        flex-direction: column;
+        width: 400px;
+    }
+    .left-image {
+        width: 100%;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 0px;
+    }
+}
