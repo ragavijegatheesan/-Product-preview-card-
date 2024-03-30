@@ -9,6 +9,7 @@
 }
 main
 {
+    margin: 0;
     background-color: var(--Cream);
     display: flex;
     flex-direction: column;
